@@ -13,19 +13,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <title>Obras Artísticas</title>
 </head>
-<body>
+<body onload="fetchArtworks()">
     <header>
         <nav>
             <p id="title">Museu de Arte</p>
 
             <ul class="nav-list">
-                <li><a href="#">Formulário</a></li>
+                <li><a href="form.html">Formulário</a></li>
                 
             </ul>
         </nav>
     </header>
-    <div class="image">
-        <img src="" alt="">
+    <!-- <div class="image">
+        <img src="assets/hd-wallpaper-g40ba3563a_1920.jpg" alt="">
+    </div> -->
+
+    <!--Artistas-->
+
+    <h2>Artistas</h2>
+
+    <div class="cards">
+        
+        <a href="#">
+            <div class="card-item">
+                <img src="assets/pabloPicasso.webp" alt="Anita Malfatti">
+                <div class="card-info">
+                    <h3>Pablo Picasso</h3>
+                    <p>Artista plástico</p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card-item">
+                <img src="assets/anitaMalfatti.jpg" alt="Anita Malfatti">
+                <div class="card-info">
+                    <h3>Anita Malfatti</h3>
+                    <p>Artista plástica</p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card-item">
+                <img src="assets/vincentVanGogh.jfif" alt="Anita Malfatti">
+                <div class="card-info">
+                    <h3>Vincent van Gogh</h3>
+                    <p>Pintor pós-impressionista</p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card-item">
+                <img src="assets/Claude_Monet.jpg" alt="Anita Malfatti">
+                <div class="card-info">
+                    <h3>Claude Monet</h3>
+                    <p>Pintor impressionista</p>
+                </div>
+            </div>
+        </a>
+        
     </div>
+
+    <div class="row">
+        <h2>Obras</h2>
+
+        <div class="artworks">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="assets/farol.webp" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
