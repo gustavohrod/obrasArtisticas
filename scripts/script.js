@@ -13,6 +13,56 @@ console.log(artworks.length);
     tagDivCard.setAttribute('class', 'mb-3 row');
     tagDivCard.setAttribute('style', 'max-width: 1000px;');
 
+    let tagDivCardBody = document.createElement('div');
+    tagDivCardBody.setAttribute('class', 'row g-0');
+    tagDivCard.appendChild(tagDivCardBody);
+
+    let tagDivImg = document.createElement('div');
+    tagDivImg.setAttribute('class', 'col-md-4');
+    tagDivImg.appendChild(tagDivCardBody);
+
+    let tagImage = document.createElement('img');
+    tagImage.setAttribute('class', 'card-img-top');
+    tagImage.setAttribute('src', artworks[i].urlArtwork);
+    //tagImage.setAttribute('alt', products[i].name);
+    tagDivCard.appendChild(tagDivImg);
+
+    let tagDivDesc = document.createElement('div');
+    tagDivDesc.setAttribute('class', 'col-md-8');
+    tagDivImg.appendChild(tagDivCardBody);
+
+    let tagDivBody = document.createElement('div');
+    tagDivBody.setAttribute('class', 'card-body');
+    tagDivImg.appendChild(tagDivBody);
+
+    let tagH5 = document.createElement('h5');
+    tagH5.setAttribute('class', 'card-title');
+
+    let textNode = document.createTextNode(artworks[i].artworkName);
+    tagH5.appendChild(textNode);
+    tagDivBody.appendChild(tagH5);
+
+    
+    let tagP = document.createElement('p');
+    tagP.setAttribute('class', 'card-text');
+    textNode = document.createTextNode(artworks[i].artworkDescription);
+    tagP.appendChild(textNode);
+    tagDivBody.appendChild(tagP);
+
+    tagP = document.createElement('p');
+    tagP.setAttribute('class', 'text-center');
+    textNode = document.createTextNode(artworks[i].artistName);
+    tagP.appendChild(textNode);
+    tagDivBody.appendChild(tagP);
+
+    tagP = document.createElement('p');
+    tagP.setAttribute('class', 'text-center');
+    textNode = document.createTextNode(artworks[i].date_artwork);
+    tagP.appendChild(textNode);
+    tagDivBody.appendChild(tagP);
+
+    let tagDivArtworks = document.getElementById('mus_artworks');
+    tagDivArtworks.appendChild(tagDivCard);
     
 
     }
