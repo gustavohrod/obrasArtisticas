@@ -2,14 +2,14 @@ const checkForm = {
     inputName: false,
     inputArtist: false,
     description: false,
-    //inputDate: false,
+    inputDate: false,
     inputUrl: false,
 }
 
 document.getElementById('inputName').addEventListener('input', function (e) {
     console.log(checkForm);
     const inputName = e.target.value;
-    if (inputName.length > 50) {
+    if (inputName.length > 100) {
         console.log('O nome do produto deve ter no máximo 50 caracteres');
         document.getElementById('name-error').style.display = "block";
         checkForm.inputName = false;
@@ -23,7 +23,7 @@ document.getElementById('inputName').addEventListener('input', function (e) {
 document.getElementById('inputArtist').addEventListener('input', function (e) {
     console.log(checkForm);
     const inputArtist = e.target.value;
-    if (inputArtist.length > 50) {
+    if (inputArtist.length > 60) {
         console.log('O nome do produto deve ter no máximo 50 caracteres');
         document.getElementById('artist-error').style.display = "block";
         checkForm.inputArtist = false;
@@ -36,7 +36,7 @@ document.getElementById('inputArtist').addEventListener('input', function (e) {
 
 document.getElementById('description').addEventListener('input', function (e) {
     const description = e.target.value;
-    if (description.length > 200 || productDescription.length < 5) {
+    if (description.length > 300 || description.length < 5) {
         console.log('A descrição do produto deve ter entre 5 e 200 caracteres');
         document.getElementById('description-error').style.display = "block";
         checkForm.description = false;
@@ -48,14 +48,14 @@ document.getElementById('description').addEventListener('input', function (e) {
 });
 
 document.getElementById('inputDate').addEventListener('input', function (e) {
-    console.log('Monitorando o preÃ§o do produto');
+    console.log('Monitorando o ano dao bra');
     const inputDate = e.target.value;
-    if (!isset(inputDate)) {
-        document.getElementById('productprice-error').style.display = 'block';
+    if (isNaN(inputDate)) {
+        document.getElementById('date-error').style.display = 'block';
         checkForm.inputDate = false;
 
     } else {
-        document.getElementById('productprice-error').style.display = 'none';
+        document.getElementById('date-error').style.display = 'none';
         checkForm.inputDate = true;
 
     }
@@ -92,7 +92,8 @@ function enableButton() {
     if (checkForm.inputName &&
         checkForm.inputArtist &&
         checkForm.description &&
-        checkForm.false) {
+        checkForm.inputDate &&
+        checkForm.inputUrl) {
         butcad.disabled = false;
     } else {
         butcad.disabled = true;

@@ -10,8 +10,8 @@ console.log(artworks.length);
         
 
     let tagDivCard = document.createElement('div');
-    tagDivCard.setAttribute('class', 'mb-3 row');
-    tagDivCard.setAttribute('style', 'max-width: 1000px;');
+    tagDivCard.setAttribute('class', 'card mb-3');
+    tagDivCard.setAttribute('style', 'max-width: 650px;');
 
     let tagDivCardBody = document.createElement('div');
     tagDivCardBody.setAttribute('class', 'row g-0');
@@ -19,21 +19,21 @@ console.log(artworks.length);
 
     let tagDivImg = document.createElement('div');
     tagDivImg.setAttribute('class', 'col-md-4');
-    tagDivImg.appendChild(tagDivCardBody);
+    tagDivCardBody.appendChild(tagDivImg);
 
     let tagImage = document.createElement('img');
-    tagImage.setAttribute('class', 'card-img-top');
+    tagImage.setAttribute('class', 'img-fluid rounded-start my-auto');
     tagImage.setAttribute('src', artworks[i].urlArtwork);
     //tagImage.setAttribute('alt', products[i].name);
-    tagDivCard.appendChild(tagDivImg);
+    tagDivImg.appendChild(tagImage);
 
     let tagDivDesc = document.createElement('div');
     tagDivDesc.setAttribute('class', 'col-md-8');
-    tagDivImg.appendChild(tagDivCardBody);
+    tagDivCardBody.appendChild(tagDivDesc);
 
     let tagDivBody = document.createElement('div');
     tagDivBody.setAttribute('class', 'card-body');
-    tagDivImg.appendChild(tagDivBody);
+    tagDivDesc.appendChild(tagDivBody);
 
     let tagH5 = document.createElement('h5');
     tagH5.setAttribute('class', 'card-title');
@@ -45,18 +45,23 @@ console.log(artworks.length);
     
     let tagP = document.createElement('p');
     tagP.setAttribute('class', 'card-text');
+ 
+    tagP.setAttribute('style', 'font-family: Open Sans');
+    tagP.setAttribute('style', 'font-size: 16px;');
     textNode = document.createTextNode(artworks[i].artworkDescription);
     tagP.appendChild(textNode);
     tagDivBody.appendChild(tagP);
 
     tagP = document.createElement('p');
     tagP.setAttribute('class', 'text-center');
+    tagP.setAttribute('style', 'font-size: 12px;');
     textNode = document.createTextNode(artworks[i].artistName);
     tagP.appendChild(textNode);
     tagDivBody.appendChild(tagP);
 
     tagP = document.createElement('p');
     tagP.setAttribute('class', 'text-center');
+    tagP.setAttribute('style', 'font-size: 12px;');
     textNode = document.createTextNode(artworks[i].date_artwork);
     tagP.appendChild(textNode);
     tagDivBody.appendChild(tagP);

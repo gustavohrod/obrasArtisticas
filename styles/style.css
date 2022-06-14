@@ -15,6 +15,7 @@ a:hover{
     border-top: solid 1px white;
     color: white;
     opacity: 0.8;
+
 }
 
 #title{
@@ -110,8 +111,6 @@ h2{
     left: 0;
 
 }
-
-
 
 .card-info h3{
     color: #FFF;

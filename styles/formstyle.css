@@ -55,3 +55,36 @@ h2{
 .divform{
     margin: auto;
 }
+
+#name-error{
+    display: none;
+  }
+  
+#artist-error{
+    display: none;
+}
+  
+#url-error{
+    display: none;
+}
+  
+#description-error{
+    display: none;
+}
+
+#date-error{
+    display: none;
+}
+
+.divInput{
+    width: 42%;
+    margin: 0 auto;
+
+    
+
+}
+
+.dInput{
+    display: inline-block;
+    margin: 10px 10px;
+}

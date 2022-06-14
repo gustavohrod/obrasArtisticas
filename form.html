@@ -28,52 +28,66 @@
   </header>
 
   <h2>Formulário</h2>
-  <div class="divform mt-5">
+  <div class="divform mt-5 mx-auto">
 
-    <form class="row g-3">
-  
+    <form class="row g-3" action="http://localhost:8000/setArtworks.php" method="get">
+
       <div class="row">
-  
-        <div class="col-3 mb-2">
-          <label for="inputName" class="form-label">Nome da obra</label>
-          <input type="text" class="form-control" id="inputName">
-          <div class="alert alert-danger mt-1" id="name-error" role="alert">
-            O nome da obra deve ter entre 0 e 100 caracteres
+
+        <div class="divInput">
+          <div class="col-5 mb-2 dInput">
+
+            <label for="inputName" class="form-label">Nome da obra</label>
+            <input type="text" class="form-control formInput" id="inputName" name="inputName">
+            <div class="alert alert-danger mt-1" id="name-error" role="alert">
+              O nome da obra deve ter entre 0 e 100 caracteres
+            </div>
           </div>
-        </div>
-        <div class="col-3 mb-2">
-          <label for="inputArtist" class="form-label">Artista</label>
-          <input type="password" class="form-control" id="inputArtist">
-          <div class="alert alert-danger mt-1" id="artist-error" role="alert">
-           O nome do artista deve ter entre 0 e 60 caracteres
+
+          <div class="col-6 mb-2 dInput">
+            <label for="inputArtist" class="form-label">Artista</label>
+            <input type="text" class="form-control formInput" id="inputArtist" name="inputArtist">
+            <div class="alert alert-danger mt-1" id="artist-error" role="alert">
+              O nome do artista deve ter entre 0 e 60 caracteres
+            </div>
           </div>
         </div>
       </div>
+
       <div class="row">
-  
-        <div class="col-4">
-          <label for="inputUrl" class="form-label">URL da imagem</label>
-          <input type="text" class="form-control" id="inputUrl">
-          <div class="alert alert-danger mt-1" id="url-error" role="alert">
-            Deve ser uma url válida
+
+        <div class="divInput mx-auto">
+
+          <div class="col-6 dInput">
+            <label for="inputUrl" class="form-label">URL da imagem</label>
+            <input type="text" class="form-control" id="inputUrl" name="inputUrl">
+            <div class="alert alert-danger mt-1" id="url-error" role="alert">
+              Deve ser uma url válida
+            </div>
+          </div>
+          <div class="col-3 dInput">
+            <label for="inputDate" class="form-label">Ano da obra</label>
+            <input type="text" class="form-control" id="inputDate" name="inputDate">
+            <div class="alert alert-danger mt-1" id="date-error" role="alert">
+              Deve ser informado o ano em formato numérico
+            </div>
           </div>
         </div>
-        <div class="col-2">
-          <label for="inputDate" class="form-label">Data da obra</label>
-          <input type="date" class="form-control" id="inputDate">
-        </div>
+
+
       </div>
-  
-      <div class="mb-3 col-6">
+      <div class="mb-3 col-5 mx-auto">
         <label for="description" class="form-label">Descrição</label>
-        <textarea class="form-control" id="description" rows="3"></textarea>
+        <textarea class="form-control" id="description" rows="3" name="description"></textarea>
         <div class="alert alert-danger mt-1" id="description-error" role="alert">
-            A descrição deve ter entre 0 e 200 caracteres
-          </div>
+          A descrição deve ter entre 0 e 200 caracteres
+        </div>
       </div>
-  
-      <div class="col-12">
-        <button type="submit" class="btn btn-dark" id="butcad">Cadastrar</button>
+
+
+
+      <div class="row">
+        <button type="submit" class="btn btn-dark mx-auto col-1" id="butcad">Cadastrar</button>
       </div>
     </form>
   </div>
