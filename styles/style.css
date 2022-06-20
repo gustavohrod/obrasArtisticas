@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html, body{ 
+    height: 100%;
+    overflow-x: hidden
+}
+
 a{
 
     text-decoration: none;
@@ -131,3 +136,38 @@ h2{
     }
 }
 
+#title_artworks{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #FFF;
+}
+
+
+.card {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.row {
+    justify-content: center;
+}
+
+#mus_artworks{
+    margin-top: 150px;
+    background: rgb(53, 52, 52);
+}
+
+#footer_museum{
+    margin-top: 200px;
+    background-color: black;
+    text-align: center;
+    color: #FFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer_museum p{
+    margin-bottom: 0;
+    text-transform: uppercase;
+}

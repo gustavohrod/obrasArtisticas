@@ -13,9 +13,9 @@ $artworkDescription = $_GET['description'];
 $urlArtwork = $_GET['inputUrl'];
 
 //Conexão com o banco de dados. 
-$hostname = 'localhost';
+$hostname = '127.0.0.1';
 $user = 'root';
-$password = 'ifsp';
+$password = '';
 $database = 'museum';
 $conn = mysqli_connect($hostname, $user, $password, $database);
 if($conn){
@@ -26,6 +26,7 @@ if($conn){
     $res = mysqli_query($conn, $query);
     if($res){
         echo '<h2>Obra incluída com sucesso!!!</h2>';
+        
     } else {
         echo '<h2>Obra não incluída.!!!</h2>';
         var_dump(mysqli_error($conn));

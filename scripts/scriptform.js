@@ -95,6 +95,7 @@ function enableButton() {
         checkForm.inputDate &&
         checkForm.inputUrl) {
         butcad.disabled = false;
+        window.location.replace='index.html';
     } else {
         butcad.disabled = true;
     }

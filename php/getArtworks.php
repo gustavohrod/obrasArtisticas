@@ -1,9 +1,9 @@
 <?php
     // Conexão com o banco de dados
     $dbUser = "root";
-    $dbPassword = "ifsp";
+    $dbPassword = "";
     $dbName = "museum";
-    $dbHost = "localhost";
+    $dbHost = "127.0.0.1";
     $connection = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
     if( $connection ) {
         // Realizar a leitura do banco

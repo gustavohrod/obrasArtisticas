@@ -11,18 +11,19 @@ console.log(artworks.length);
 
     let tagDivCard = document.createElement('div');
     tagDivCard.setAttribute('class', 'card mb-3');
-    tagDivCard.setAttribute('style', 'max-width: 650px;');
+    tagDivCard.setAttribute('style', 'width: 600px;');
+    
 
     let tagDivCardBody = document.createElement('div');
     tagDivCardBody.setAttribute('class', 'row g-0');
     tagDivCard.appendChild(tagDivCardBody);
 
     let tagDivImg = document.createElement('div');
-    tagDivImg.setAttribute('class', 'col-md-4');
+    tagDivImg.setAttribute('class', 'col-md-4 my-auto');
     tagDivCardBody.appendChild(tagDivImg);
 
     let tagImage = document.createElement('img');
-    tagImage.setAttribute('class', 'img-fluid rounded-start my-auto');
+    tagImage.setAttribute('class', 'img-fluid rounded-start');
     tagImage.setAttribute('src', artworks[i].urlArtwork);
     //tagImage.setAttribute('alt', products[i].name);
     tagDivImg.appendChild(tagImage);
