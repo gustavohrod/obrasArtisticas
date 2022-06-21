@@ -26,7 +26,7 @@ if($conn){
     $res = mysqli_query($conn, $query);
     if($res){
         echo '<h2>Obra incluída com sucesso!!!</h2>';
-        
+        header("Location:".$_SERVER['HTTP_REFERER']);
     } else {
         echo '<h2>Obra não incluída.!!!</h2>';
         var_dump(mysqli_error($conn));

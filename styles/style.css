@@ -20,7 +20,6 @@ a:hover{
     border-top: solid 1px white;
     color: white;
     opacity: 0.8;
-
 }
 
 #title{
@@ -28,14 +27,14 @@ a:hover{
     text-transform: uppercase;
     letter-spacing: 4px;
     color: white;
+    margin-bottom: 0;
 }
 
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
-    padding-top: 20px;
+    height: 11vh;
     border-bottom: solid white 1px;
     background-color: black;
     text-transform: uppercase;
@@ -44,7 +43,7 @@ nav{
 .nav-list{
     list-style: none;
     display: flex;
-
+    margin-bottom: 0;
 }
 
 .nav-list li{
@@ -53,6 +52,7 @@ nav{
 }
 
 h2{
+    margin-top: 40px;
     text-align: center;
     font-size: 60px;
 }
@@ -79,6 +79,7 @@ h2{
     transition-property: transform;
     transition-duration: 0.3s;
     overflow: hidden;
+    color: white;
     
 }
 
@@ -103,7 +104,7 @@ h2{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 5px;
     transform: translateY(100%);
@@ -156,18 +157,27 @@ h2{
 #mus_artworks{
     margin-top: 150px;
     background: rgb(53, 52, 52);
+    padding-bottom: 20px;
 }
 
 #footer_museum{
-    margin-top: 200px;
-    background-color: black;
+    background-color: rgb(37, 37, 37);
     text-align: center;
     color: #FFF;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 #footer_museum p{
     margin-bottom: 0;
     text-transform: uppercase;
+}
+
+.quote{
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    margin: 80px 0 80px;
 }

@@ -27,14 +27,14 @@ a:hover{
     text-transform: uppercase;
     letter-spacing: 4px;
     color: white;
+    margin-bottom: 0;
 }
 
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
-    padding-top: 20px;
+    height: 11vh;
     border-bottom: solid white 1px;
     background-color: black;
     text-transform: uppercase;
@@ -43,7 +43,7 @@ nav{
 .nav-list{
     list-style: none;
     display: flex;
-
+    margin-bottom: 0;
 }
 
 .nav-list li{
@@ -55,6 +55,7 @@ h2{
     margin-top: 20px;
     text-align: center;
     font-size: 60px;
+    font-size: 50px;
 }
 
 .divform{
@@ -95,7 +96,20 @@ h2{
 }
 
 #footer_museum{
-    background-color: black;
-    
 
+    background-color: black;
+    text-align: center;
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#footer_museum p{
+    margin-bottom: 0;
+    text-transform: uppercase;
 }
